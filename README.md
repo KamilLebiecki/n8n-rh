@@ -97,29 +97,6 @@ Your primary goal is to provide empathetic support and helpful guidance to Rever
 *None provided.*
 ```
 
-### Technical Configuration Template
-
-```json
-{
-  "agent_name": "Matthew",
-  "agent_type": "customer_support",
-  "company": "Reverse Health",
-  "target_audience": "Women over 40",
-  "knowledge_sources": [
-    "https://help.reverse.health/en/"
-  ],
-  "conversation_settings": {
-    "max_duration": "10 minutes",
-    "primary_language": "en-US",
-    "available_languages": ["es", "pt-BR", "pt", "de", "fr", "pl"],
-    "voice": "compassionate_support",
-    "first_message": "Hi there! My names is Matthew and I'm here to support you on your journey to feeling stronger and healthier."
-  },
-  "webhook_settings": {
-    "on_call_completion": "https://your-n8n-instance.com/webhook/e4d903b2-a0c3-4f26-b50e-3677965694c3"
-  }
-}
-```
 
 ### Required ElevenLabs Setup
 
@@ -135,7 +112,7 @@ Your primary goal is to provide empathetic support and helpful guidance to Rever
 ### Test the Agent
 
 You can test the Matthew agent directly here:
-**[Talk to Matthew Agent](https://elevenlabs.io/app/agents/talk-to/agent_5901k5h2d805f5w9y4dd4j7rvdeh)**
+**[Talk to Matthew Agent](https://elevenlabs.io/app/talk-to?agent_id=agent_5901k5h2d805f5w9y4dd4j7rvdeh)**
 
 ## 3. Self-hosted n8n.io Configuration
 
