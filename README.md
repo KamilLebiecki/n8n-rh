@@ -5,6 +5,9 @@ This repository contains an n8n workflow that creates an automated RH phone syst
 ## System Overview
 
 The workflow creates a complete phone-to-email automation system:
+
+![RH Phone Automation Workflow](https://github.com/user-attachments/assets/5c8e4b1e-8b4f-4c2a-9f6d-3e7f8a2b5c9d)
+
 1. **Twilio** provides the phone number and call routing
 2. **ElevenLabs** handles AI-powered voice conversations
 3. **n8n** processes the call data and triggers email notifications
@@ -35,7 +38,7 @@ The ElevenLabs agent is configured as Matthew, a compassionate customer support 
 
 - **Agent Name**: Matthew
 - **Agent Type**: Customer support conversational AI for Reverse Health
-- **Knowledge Base**: Populated with public articles from [https://help.reverse.health/en/](https://help.reverse.health/en/)
+- **Knowledge Base**: Populated with public articles from <a href="https://help.reverse.health/en/" target="_blank">https://help.reverse.health/en/</a>
 - **Purpose**: Provide empathetic support to Reverse Health customers (women over 40)
 
 ### Language Configuration
@@ -100,7 +103,7 @@ Your primary goal is to provide empathetic support and helpful guidance to Rever
 
 ### Required ElevenLabs Setup
 
-1. Create an ElevenLabs account at [elevenlabs.io](https://elevenlabs.io)
+1. Create an ElevenLabs account at <a href="https://elevenlabs.io" target="_blank">elevenlabs.io</a>
 2. Configure a conversational AI agent named "Matthew"
 3. Upload the complete agent configuration (personality, environment, tone, goals, and guardrails)
 4. Upload Reverse Health knowledge base from documentation
@@ -112,7 +115,7 @@ Your primary goal is to provide empathetic support and helpful guidance to Rever
 ### Test the Agent
 
 You can test the Matthew agent directly here:
-**[🤖 Talk to Matthew Agent](https://elevenlabs.io/app/talk-to?agent_id=agent_5901k5h2d805f5w9y4dd4j7rvdeh)**
+**<a href="https://elevenlabs.io/app/talk-to?agent_id=agent_5901k5h2d805f5w9y4dd4j7rvdeh" target="_blank">🤖 Talk to Matthew Agent</a>**
 
 ## 3. Self-hosted n8n.io Configuration
 
@@ -121,13 +124,13 @@ You can test the Matthew agent directly here:
 This workflow is designed to run on a self-hosted n8n instance. mikr.us provides a simplified one-command installation for n8n:
 
 #### Recommended VPS Configuration
-- **Provider**: [mikr.us](https://mikr.us/n8n.html)
+- **Provider**: <a href="https://mikr.us/n8n.html" target="_blank">mikr.us</a>
 - **Server**: Mikrus 2.1 (1GB RAM, 10GB storage - perfect for beginners)
 - **Includes**: Free subdomain with SSL certificate, automatic backups, and updates
 
 #### Super Simple Installation Steps
 
-1. **Order a Mikrus 2.1 server** at [mikr.us](https://mikr.us/n8n.html)
+1. **Order a Mikrus 2.1 server** at <a href="https://mikr.us/n8n.html" target="_blank">mikr.us</a>
    - 1GB RAM, 10GB disk space (ideal for beginners)
    - Includes free SSL subdomain
    - 14-day return policy
@@ -290,7 +293,7 @@ Expected JSON structure from ElevenLabs:
 ## Support
 
 For issues related to:
-- **n8n**: [n8n Community](https://community.n8n.io/)
-- **Twilio**: [Twilio Support](https://support.twilio.com/)
-- **ElevenLabs**: [ElevenLabs Documentation](https://docs.elevenlabs.io/)
-- **mikr.us VPS**: [mikr.us Wiki](https://wiki.mikr.us)
+- **n8n**: <a href="https://community.n8n.io/" target="_blank">n8n Community</a>
+- **Twilio**: <a href="https://support.twilio.com/" target="_blank">Twilio Support</a>
+- **ElevenLabs**: <a href="https://docs.elevenlabs.io/" target="_blank">ElevenLabs Documentation</a>
+- **mikr.us VPS**: <a href="https://wiki.mikr.us" target="_blank">mikr.us Wiki</a>
