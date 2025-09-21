@@ -6,12 +6,17 @@ This repository contains an n8n workflow that creates an automated RH phone syst
 
 The workflow creates a complete phone-to-email automation system:
 
-![RH Phone Automation Workflow](https://github.com/user-attachments/assets/5c8e4b1e-8b4f-4c2a-9f6d-3e7f8a2b5c9d)
+```
+📞 Twilio → 🤖 ElevenLabs → 🔗 n8n → 📧 Gmail
+   ↓            ↓             ↓         ↓
+Phone Call → AI Agent → Webhook → Email Summary
+```
 
-1. **Twilio** provides the phone number and call routing
-2. **ElevenLabs** handles AI-powered voice conversations
-3. **n8n** processes the call data and triggers email notifications
-4. **Gmail** sends conversation summaries to designated recipients
+**Flow Details:**
+1. **Twilio** (+1 430 243 2584) receives phone calls and routes them to ElevenLabs
+2. **ElevenLabs** AI agent (Matthew) conducts customer support conversations
+3. **n8n** webhook processes call completion data and extracts conversation summary
+4. **Gmail** automatically sends email summary to designated recipient
 
 ## 1. Twilio.com Configuration
 
