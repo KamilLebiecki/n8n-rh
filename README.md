@@ -58,9 +58,6 @@ Hi there! My names is Matthew and I'm here to support you on your journey to fee
 
 ### Complete Agent Configuration
 
-<details>
-<summary>Click to expand full agent configuration</summary>
-
 ```markdown
 # Personality
 
@@ -99,8 +96,6 @@ Your primary goal is to provide empathetic support and helpful guidance to Rever
 
 *None provided.*
 ```
-
-</details>
 
 
 ### Required ElevenLabs Setup
