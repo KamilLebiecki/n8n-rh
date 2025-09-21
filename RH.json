@@ -1,0 +1,135 @@
+{
+  "name": "RH",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "e4d903b2-a0c3-4f26-b50e-3677965694c3",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "676cdb52-d200-4e49-9fe2-dbd896886b4c",
+      "name": "Webhook",
+      "webhookId": "e4d903b2-a0c3-4f26-b50e-3677965694c3"
+    },
+    {
+      "parameters": {
+        "fromEmail": "N8n <kamil.lebiecki@gmail.com>",
+        "toEmail": "kamil.lebiecki@icloud.com",
+        "subject": "={{ $json.body.data.conversation_initiation_client_data.dynamic_variables.system__time }}  {{ $json.body.data.conversation_initiation_client_data.dynamic_variables.system__caller_id }}",
+        "emailFormat": "text",
+        "text": "=Sending summary of the conversation:\n\n{{ $json.body.data.analysis.transcript_summary }}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        208,
+        0
+      ],
+      "id": "63eea375-a4dc-4900-b968-d828bf9b563d",
+      "name": "Send email",
+      "webhookId": "393e051b-7c63-45be-822f-4bcb2789aabb",
+      "credentials": {
+        "smtp": {
+          "id": "UrZ558uaCpU0IBio",
+          "name": "Gmail SMTP"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "## Self-hosted n8n.io ##\n\nWebhook configured to listen for the call data, extracting the summary of the call.",
+        "height": 288,
+        "width": 288,
+        "color": 2
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -112,
+        -144
+      ],
+      "id": "8c212344-29bd-4659-9ba7-5f14e78f61a8",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "## Gmail Node ##\n\nNode configured to send an plain text email with summary of the call to hardcoded recipient.\n",
+        "height": 288,
+        "width": 288,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        176,
+        -144
+      ],
+      "id": "a575069b-fc04-4442-b016-e24c3c62db19",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "## Twilio.com ##\n\nProvisioning phone number\n\n+1 430 243 2584\nor\n+1 430 2 HEALTH\n\nConnected to ElevenLabs Agent",
+        "height": 288,
+        "width": 288,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -688,
+        -144
+      ],
+      "id": "1d5a2d4e-bc28-4774-8565-3117760bbdb2",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "## Elevenlabs.io ##\n\nAgent configure to be a healthcare.\n\nFilled with public articles from webpages:\n\nhttps://help.reverse.health/en/",
+        "height": 288,
+        "width": 288,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -400,
+        -144
+      ],
+      "id": "e64d8864-0361-4be1-bae6-067d02e2983a",
+      "name": "Sticky Note3"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Send email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "36e428e6-1707-4e68-bba1-3590bad4a311",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "feb4e204854589cdf62fe25010668b68c2502dd51f1d66ef0a38d93b0b4c1c85"
+  },
+  "id": "1R8gVjIqjsqoRTFK",
+  "tags": []
+}
