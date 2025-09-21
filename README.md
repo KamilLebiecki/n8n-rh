@@ -58,6 +58,9 @@ Hi there! My names is Matthew and I'm here to support you on your journey to fee
 
 ### Complete Agent Configuration
 
+<details>
+<summary>Click to expand full agent configuration</summary>
+
 ```markdown
 # Personality
 
@@ -97,6 +100,8 @@ Your primary goal is to provide empathetic support and helpful guidance to Rever
 *None provided.*
 ```
 
+</details>
+
 
 ### Required ElevenLabs Setup
 
@@ -112,7 +117,7 @@ Your primary goal is to provide empathetic support and helpful guidance to Rever
 ### Test the Agent
 
 You can test the Matthew agent directly here:
-**[Talk to Matthew Agent](https://elevenlabs.io/app/talk-to?agent_id=agent_5901k5h2d805f5w9y4dd4j7rvdeh)**
+**[🤖 Talk to Matthew Agent](https://elevenlabs.io/app/talk-to?agent_id=agent_5901k5h2d805f5w9y4dd4j7rvdeh)**
 
 ## 3. Self-hosted n8n.io Configuration
 
@@ -197,7 +202,6 @@ No manual environment configuration is required - everything is preconfigured in
 The Gmail node sends automated email summaries of phone conversations:
 
 - **Service**: Gmail SMTP
-- **Credential ID**: UrZ558uaCpU0IBio
 - **Email Format**: Plain text
 - **From Address**: N8n <kamil.lebiecki@gmail.com>
 - **To Address**: kamil.lebiecki@icloud.com
@@ -294,4 +298,4 @@ For issues related to:
 - **n8n**: [n8n Community](https://community.n8n.io/)
 - **Twilio**: [Twilio Support](https://support.twilio.com/)
 - **ElevenLabs**: [ElevenLabs Documentation](https://docs.elevenlabs.io/)
-- **mikr.us VPS**: [mikr.us Support](https://mikr.us/support)
+- **mikr.us VPS**: [mikr.us Wiki](https://wiki.mikr.us)
