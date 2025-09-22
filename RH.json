@@ -19,8 +19,8 @@
     },
     {
       "parameters": {
-        "fromEmail": "N8n <kamil.lebiecki@gmail.com>",
-        "toEmail": "kamil.lebiecki@icloud.com",
+        "fromEmail": "N8n <kamil•lebiecki•at•gmail•com>",
+        "toEmail": "kamil•lebiecki•at•icloud•com",
         "subject": "={{ $json.body.data.conversation_initiation_client_data.dynamic_variables.system__time }}  {{ $json.body.data.conversation_initiation_client_data.dynamic_variables.system__caller_id }}",
         "emailFormat": "text",
         "text": "=Sending summary of the conversation:\n\n{{ $json.body.data.analysis.transcript_summary }}\n",

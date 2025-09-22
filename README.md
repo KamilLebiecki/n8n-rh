@@ -206,8 +206,8 @@ The Gmail node sends automated email summaries of phone conversations:
 
 - **Service**: Gmail SMTP
 - **Email Format**: Plain text
-- **From Address**: N8n <kamil.lebiecki@gmail.com>
-- **To Address**: kamil.lebiecki@icloud.com
+- **From Address**: N8n <kamil•lebiecki•at•gmail•com>
+- **To Address**: kamil•lebiecki•at•icloud•com
 
 ### Email Template
 
